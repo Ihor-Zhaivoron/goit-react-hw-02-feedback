@@ -2,7 +2,7 @@ import { Component } from 'react';
 import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
 import Statistics from './Statistics/Statistics';
 import Section from './Section/Section';
-import Notification from './Notification/Notification';
+import { Notification } from './Notification/Notification';
 
 class App extends Component {
   state = {
@@ -11,8 +11,8 @@ class App extends Component {
     bad: 0,
   };
 
-  changeValue = e => {
-    const name = e.currentTarget.name;
+  changeValue = name => {
+    // const name = e.currentTarget.name;
     // console.log(name);
     this.setState(prevState => ({
       [name]: prevState[name] + 1,
@@ -52,7 +52,6 @@ class App extends Component {
           ) : (
             <Notification message="There is no feedback" />
           )}
-          ;
         </Section>
       </>
     );
