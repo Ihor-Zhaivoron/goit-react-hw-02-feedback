@@ -1,0 +1,6 @@
+.statistics_item {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+  font-weight: bold;
+}

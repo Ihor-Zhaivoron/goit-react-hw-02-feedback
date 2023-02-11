@@ -11,8 +11,9 @@ const FeedbackOptions = ({ states, onClickBtn }) => {
             className={css.feedback_btn}
             type="button"
             onClick={() => onClickBtn(key)}
-          ></button>
-          {key}
+          >
+            {key}
+          </button>
         </li>
       ))}
     </ul>
